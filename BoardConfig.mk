@@ -100,6 +100,9 @@ TARGET_LIBINIT_DEFINES_FILE := device/nvidia/shieldtablet/init/init_tn8.cpp
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Zygote whitelist extra paths
+ZYGOTE_WHITELIST_PATH_EXTRA := \"/dev/nvhost-ctrl\",
+
 # TWRP Support
 ifeq ($(WITH_TWRP),true)
 -include device/nvidia/shieldtablet/twrp/twrp.mk
